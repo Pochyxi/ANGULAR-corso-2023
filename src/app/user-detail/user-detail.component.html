@@ -1,0 +1,31 @@
+{{ user | json }}
+<form>
+  <div class="form-group">
+    <label for="firstname">Firstname</label>
+    <input [(ngModel)]="user.name" name="firstname" id="firstname">
+  </div>
+  <div class="form-group">
+    <label for="lastname">Lastname</label>
+    <input [(ngModel)]="user.lastname" name="lastname" id="lastname">
+  </div>
+  <div class="form-group">
+    <label for="fiscalcode">Fiscalcode</label>
+    <input [(ngModel)]="user.fiscalcode" name="fiscalcode" id="fiscalcode">
+  </div>
+  <div class="form-group">
+    <label for="province">Province</label>
+    <input [(ngModel)]="user.province" name="province" id="province">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input [(ngModel)]="user.phone" type="number" name="phone" id="phone">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input [(ngModel)]="user.email" type="email" name="email" id="email">
+  </div>
+  <div class="form-group">
+    <button (click)="resetUser()" class="btn-reset" type="button">RESET</button>
+    <button (click)="saveUser()" class="btn-save" type="submit">SAVE</button>
+  </div>
+</form>

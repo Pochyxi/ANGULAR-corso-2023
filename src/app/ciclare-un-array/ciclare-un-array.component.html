@@ -1,0 +1,18 @@
+<table>
+  <caption>Users</caption>
+  <tr>
+    <th>name</th>
+    <th>lastname</th>
+    <th>email</th>
+    <th>fiscalcode</th>
+    <th>province</th>
+    <th>phone</th>
+    <th>age</th>
+    <th>Actions</th>
+  </tr>
+  <tr app-figlio *ngFor="let user of users" [user-data]="user"
+      (onDeleteUser)="onDeleteUser($event)"
+      (onSelectUser)="onUpdateUser($event)"
+  ></tr>
+</table>
+
