@@ -1,11 +1,20 @@
-<div class="main">
-  <button (click)="newUser()">New User</button>
-  <div class="users">
-    <app-ciclare-un-array (updateUser)="updateUser($event)"></app-ciclare-un-array>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 text-center mt-2">
+      <button class="btn btn-dark" (click)="newUser()">New User</button>
+    </div>
+
   </div>
-  <div class="userDetail" *ngIf="showForm"
-  >
-    <app-user-detail [user]="userSelected"></app-user-detail>
+
+  <div class="row">
+    <div class="col">
+      <app-ciclare-un-array (updateUser)="updateUser($event)"></app-ciclare-un-array>
+    </div>
+    <div class="col" *ngIf="showForm"
+    >
+      <app-user-detail [user]="userSelected"></app-user-detail>
+    </div>
   </div>
+
 </div>
 <router-outlet></router-outlet>

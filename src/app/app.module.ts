@@ -6,6 +6,7 @@ import { CiclareUnArrayComponent } from './ciclare-un-array/ciclare-un-array.com
 import { FiglioComponent } from './figlio/figlio.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import {FormsModule} from "@angular/forms";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {FormsModule} from "@angular/forms";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,31 +1,30 @@
-{{ user | json }}
 <form>
-  <div class="form-group">
-    <label for="firstname">Firstname</label>
-    <input [(ngModel)]="user.name" name="firstname" id="firstname">
+  <div>
+    <label class="form-label" for="firstname">Firstname</label>
+    <input class="form-control" [(ngModel)]="user.name" name="firstname" id="firstname">
   </div>
-  <div class="form-group">
-    <label for="lastname">Lastname</label>
-    <input [(ngModel)]="user.lastname" name="lastname" id="lastname">
+  <div>
+    <label class="form-label" for="lastname">Lastname</label>
+    <input class="form-control" [(ngModel)]="user.lastname" name="lastname" id="lastname">
   </div>
-  <div class="form-group">
-    <label for="fiscalcode">Fiscalcode</label>
-    <input [(ngModel)]="user.fiscalcode" name="fiscalcode" id="fiscalcode">
+  <div>
+    <label class="form-label" for="fiscalcode">Fiscalcode</label>
+    <input class="form-control" [(ngModel)]="user.fiscalcode" name="fiscalcode" id="fiscalcode">
   </div>
-  <div class="form-group">
-    <label for="province">Province</label>
-    <input [(ngModel)]="user.province" name="province" id="province">
+  <div>
+    <label class="form-label" for="province">Province</label>
+    <input class="form-control" [(ngModel)]="user.province" name="province" id="province">
   </div>
-  <div class="form-group">
-    <label for="phone">Phone</label>
-    <input [(ngModel)]="user.phone" type="number" name="phone" id="phone">
+  <div>
+    <label class="form-label" for="phone">Phone</label>
+    <input class="form-control" [(ngModel)]="user.phone" type="number" name="phone" id="phone">
   </div>
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input [(ngModel)]="user.email" type="email" name="email" id="email">
+  <div>
+    <label class="form-label" for="email">Email</label>
+    <input class="form-control" [(ngModel)]="user.email" type="email" name="email" id="email">
   </div>
-  <div class="form-group">
-    <button (click)="resetUser()" class="btn-reset" type="button">RESET</button>
-    <button (click)="saveUser()" class="btn-save" type="submit">SAVE</button>
+  <div class="mt-3">
+    <button (click)="resetUser()" class="btn btn-dark me-2" type="button">RESET</button>
+    <button (click)="saveUser()" class="btn btn-primary" type="submit">SAVE</button>
   </div>
 </form>

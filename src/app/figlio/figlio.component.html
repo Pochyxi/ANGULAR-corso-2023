@@ -1,13 +1,13 @@
-<td>{{ user?.name }}</td>
-<td>{{ user?.lastname }}</td>
-<td>{{ user?.email }}</td>
-<td>{{ user?.fiscalcode }}</td>
-<td>{{ user?.province }}</td>
-<td>{{ user?.phone }}</td>
-<td>{{ user?.age }}</td>
-<td>
-  <button (click)="updateUser()">MODIFICA</button>
-  <button (click)="deleteUser()">ELIMINA</button>
+<td>{{ user.name }}</td>
+<td>{{ user.lastname }}</td>
+<td>{{ user.email }}</td>
+<td>{{ user.fiscalcode }}</td>
+<td>{{ user.province }}</td>
+<td>{{ user.phone }}</td>
+<td>{{ user.age }}</td>
+<td class="text-center">
+  <button class="btn btn-primary my-1 w-100" (click)="updateUser()">MODIFICA</button>
+  <button class="btn btn-dark my-1 w-100" (click)="deleteUser()">ELIMINA</button>
 </td>
 
 
