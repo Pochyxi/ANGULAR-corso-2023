@@ -1,0 +1,27 @@
+<table class="table table-dark table-striped">
+  <thead>
+  <h3>Users</h3>
+  <tr>
+    <th>name</th>
+    <th>lastname</th>
+    <th>email</th>
+    <th>fiscalcode</th>
+    <th>province</th>
+    <th>phone</th>
+    <th>age</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+
+  <tbody *ngIf="(users$ | async) as users">
+  <tr
+    user-component
+    id="{{ user.id }}"
+    *ngFor="let user of users"
+    [user-data]="user"
+    (onDeleteUser)="onDeleteUser($event)"
+    (onSelectUser)="onUpdateUser($event)"
+  ></tr>
+  </tbody>
+</table>
+

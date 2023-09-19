@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CiclareUnArrayComponent } from './ciclare-un-array.component';
+import { UsersComponent } from './users-component';
 
 describe('CiclareUnArrayComponent', () => {
-  let component: CiclareUnArrayComponent;
-  let fixture: ComponentFixture<CiclareUnArrayComponent>;
+  let component: UsersComponent;
+  let fixture: ComponentFixture<UsersComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CiclareUnArrayComponent]
+      declarations: [UsersComponent]
     });
-    fixture = TestBed.createComponent(CiclareUnArrayComponent);
+    fixture = TestBed.createComponent(UsersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

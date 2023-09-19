@@ -1,0 +1,22 @@
+<td>{{ user.name }}</td>
+<td>{{ user.lastname }}</td>
+<td>{{ user.email }}</td>
+<td>{{ user.fiscalcode }}</td>
+<td>{{ user.province }}</td>
+<td>{{ user.phone }}</td>
+<td>{{ user.age }}</td>
+<td class="text-center">
+  <a class="btn btn-primary mx-1" routerLink="/users/{{ user.id }}">
+    <fa-icon [icon]="faInfo"></fa-icon>
+  </a>
+
+  <a class="btn btn-primary" routerLink="/users/{{ user.id }}/edit">
+    <fa-icon [icon]="faPen"></fa-icon>
+  </a>
+
+  <button class="btn btn-dark" (click)="deleteUser()">
+    <fa-icon [icon]="faTrash"></fa-icon>
+  </button>
+</td>
+
+
