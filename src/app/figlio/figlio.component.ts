@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {User} from "../classes/User";
+import {faPencilAlt, faTrashAlt} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'tr[app-figlio]',
@@ -7,6 +8,8 @@ import {User} from "../classes/User";
   styleUrls: ['./figlio.component.scss']
 })
 export class FiglioComponent {
+  faTrashAlt = faTrashAlt
+  faPencilAlt = faPencilAlt
   @Input('user-data') user: User = new User()
   @Output('onDeleteUser') userDeleted = new EventEmitter()
   @Output() onSelectUser = new EventEmitter()

@@ -6,8 +6,12 @@
 <td>{{ user.phone }}</td>
 <td>{{ user.age }}</td>
 <td class="text-center">
-  <button class="btn btn-primary my-1 w-100" (click)="updateUser()">MODIFICA</button>
-  <button class="btn btn-dark my-1 w-100" (click)="deleteUser()">ELIMINA</button>
+  <button class="btn btn-primary mx-1" (click)="updateUser()">
+    <fa-icon [icon]="faPencilAlt"></fa-icon>
+  </button>
+  <button class="btn btn-dark mx-1" (click)="deleteUser()">
+    <fa-icon [icon]="faTrashAlt"></fa-icon>
+  </button>
 </td>
 
 
